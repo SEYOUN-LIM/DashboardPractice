@@ -30,11 +30,14 @@ namespace dashboard.API
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddEntityFrameworkNpgsql()
-                .AddDbContext<ApiContext>(opt => opt.UseNpgsql(Configuration.GetConnectionString("ApiConnectionString")));
+                .AddDbContext<ApiContext>(
+                    opt => opt.UseNpgsql(Configuration.GetConnectionString("ApiConnectionString")));
+
+            services.AddTransient<DataSeed>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, DataSeed seed)
         {
             if (env.IsDevelopment())
             {
@@ -47,6 +50,9 @@ namespace dashboard.API
             }
 
             app.UseHttpsRedirection();
+
+            seed.SeedData(20, 1000);
+
             app.UseMvc();
         }
     }
