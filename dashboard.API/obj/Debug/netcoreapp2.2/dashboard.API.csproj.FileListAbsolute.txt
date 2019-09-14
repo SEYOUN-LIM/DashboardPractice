@@ -1,0 +1,14 @@
+C:\repo\dashboard\DashboardPractice\dashboard.API\bin\Debug\netcoreapp2.2\dashboard.API.deps.json
+C:\repo\dashboard\DashboardPractice\dashboard.API\bin\Debug\netcoreapp2.2\dashboard.API.runtimeconfig.json
+C:\repo\dashboard\DashboardPractice\dashboard.API\bin\Debug\netcoreapp2.2\dashboard.API.runtimeconfig.dev.json
+C:\repo\dashboard\DashboardPractice\dashboard.API\bin\Debug\netcoreapp2.2\dashboard.API.dll
+C:\repo\dashboard\DashboardPractice\dashboard.API\obj\Debug\netcoreapp2.2\dashboard.API.csprojAssemblyReference.cache
+C:\repo\dashboard\DashboardPractice\dashboard.API\obj\Debug\netcoreapp2.2\dashboard.API.csproj.CoreCompileInputs.cache
+C:\repo\dashboard\DashboardPractice\dashboard.API\obj\Debug\netcoreapp2.2\dashboard.API.RazorAssemblyInfo.cache
+C:\repo\dashboard\DashboardPractice\dashboard.API\obj\Debug\netcoreapp2.2\dashboard.API.RazorAssemblyInfo.cs
+C:\repo\dashboard\DashboardPractice\dashboard.API\obj\Debug\netcoreapp2.2\dashboard.API.AssemblyInfoInputs.cache
+C:\repo\dashboard\DashboardPractice\dashboard.API\obj\Debug\netcoreapp2.2\dashboard.API.AssemblyInfo.cs
+C:\repo\dashboard\DashboardPractice\dashboard.API\obj\Debug\netcoreapp2.2\dashboard.API.RazorTargetAssemblyInfo.cache
+C:\repo\dashboard\DashboardPractice\dashboard.API\bin\Debug\netcoreapp2.2\dashboard.API.pdb
+C:\repo\dashboard\DashboardPractice\dashboard.API\obj\Debug\netcoreapp2.2\dashboard.API.dll
+C:\repo\dashboard\DashboardPractice\dashboard.API\obj\Debug\netcoreapp2.2\dashboard.API.pdb
