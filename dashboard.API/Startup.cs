@@ -53,7 +53,8 @@ namespace dashboard.API
 
             seed.SeedData(20, 1000);
 
-            app.UseMvc();
+            app.UseMvc(routes => routes.MapRoute(
+                "default", "api/{controller}/{action}/{id?}"));
         }
     }
 }
