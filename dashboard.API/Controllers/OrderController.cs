@@ -51,7 +51,7 @@ namespace dashboard.API.Controllers
                 .Select(grp => new
                 {
                     State = grp.Key,
-                    Total = grp.Sum(x => x.Total)
+                    Total = grp.Sum(x => x.OrderTotal)
                 }).OrderByDescending(res => res.Total).ToList();
 
             return Ok(groupedResult);
@@ -67,14 +67,14 @@ namespace dashboard.API.Controllers
                 .Select(grp => new
                 {
                     State = _ctx.Customers.Find(grp.Key).Name,
-                    Total = grp.Sum(x => x.Total)
+                    Total = grp.Sum(x => x.OrderTotal)
                 }).OrderByDescending(res => res.Total)
                 .Take(n).ToList();
 
             return Ok(groupedResult);
         }
 
-        [HttpGet("GetOrder/{}", Name = "GetOrder")]
+        [HttpGet("GetOrder/{id}", Name = "GetOrder")]
         public IActionResult GetOrder(int id)
         {
             var order = _ctx.Orders.Include(o => o.Customer).FirstOrDefault(o => o.Id == id);
